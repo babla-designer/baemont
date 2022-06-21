@@ -657,7 +657,7 @@ html,body{
 .middle-btn:before {
     content: "";
     position: absolute;
-    width: 9em;
+    width: 8.1em;
     height: 1px;
     background: black;
     left: 91px;
@@ -670,7 +670,7 @@ html,body{
 .middle-btn:after {
     content: "";
     position: absolute;
-    width: 9.7em;
+    width: 8.1em;
     height: 1px;
     background: black;
     right: 97px;
@@ -729,12 +729,12 @@ html,body{
     color: #fff;
 }
 .product-body-text h5 {
-    font-size: 1.1em;
+    font-size: 1em;
     text-align: center;
 }
 
 .product-body-text p {
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 700;
     text-align: center;
     color: #8b2845;
