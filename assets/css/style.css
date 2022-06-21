@@ -657,7 +657,7 @@ html,body{
 .middle-btn:before {
     content: "";
     position: absolute;
-    width: 8.1em;
+    width: 7.2em;
     height: 1px;
     background: black;
     left: 91px;
