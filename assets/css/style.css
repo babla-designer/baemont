@@ -748,3 +748,48 @@ html,body{
     border: 1px solid #8b2845;
 }
 /* ==========filter========= */
+
+/* ==========Contact========= */
+.heading {
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 0;
+    line-height: 1;
+    color: #8b2845;
+    text-transform: uppercase;
+}
+.contactInfo :is(.media-left, .media-body) {
+    display: table-cell;
+    vertical-align: top;
+}
+/* ==========Contact========= */
+
+/* ==========Customize========= */
+.customize-cate {
+    border: 0;
+    align-items: center;
+}
+
+.customize-cate img {
+    border-radius: 50%;
+    width: 13.3em;
+    height: 13.3em;
+}
+
+.customize-text h5 {
+    color: #8b2845;
+    font-weight: 700;
+    border: 1px solid #8b2845;
+    padding: 0.4em;
+}
+
+.customize-text {
+    text-align: center;
+}
+.customize-sec {
+    background: linear-gradient(45deg, #d4dbeb, #f1f2f7);
+    padding: 4em;
+    margin-bottom: 9em;
+    margin-top: 5em;
+}
+/* ==========Customize========= */

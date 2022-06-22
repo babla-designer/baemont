@@ -169,84 +169,126 @@
   <!--header area end-->
 
 
+
   <section id="breadcrumbRow">
-    <h2>About us</h2>
+    <h2>Contact us</h2>
        <div class="container">
     <div class="row pageTitle m0">
       <div class="col-12">
-          <h4 class="fleft">About us</h4>
+          <h4 class="fleft">Contact us</h4>
           <ul class="breadcrumb fright">
              <li><a href="index.html">home</a></li>
-             <li class="active">about us</li>
+             <li class="active">Contact us</li>
           </ul>
 
       </div>
        </div>
     </div>
  </section>
- <section id="whatWeDid" class="contentRowPad">
+
+
+<section id="contactRow" class=" contentRowPad">
     <div class="container">
-       <div class="row">
-          <div class="col-sm-6 tab_menu">
-             <div class="row m0">
-             </div>
-          </div>
-          <div class="col-sm-6 tab-contents">
-             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="wwd2018">
-                   <h3>What we did in 2018</h3>
-                   <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure.</p>
-                   <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure.to help our lovely customers.</p>
-                   <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure.to help our lovely customers.</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row m0">
+                    <h4 class="contactHeading heading">contact form style</h4>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="wwd2017">
-                   <h3>What we did in 2017</h3>
-                   <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure.</p>
-                   <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure.to help our lovely customers.</p>
-                   <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure.to help our lovely customers.</p>
+                <div class="row m0 contactForm">
+                    <form class="row m0" id="contactForm" method="post" name="contact" action="contact_process.php">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="name">Name *</label>
+                                <input type="text" class="form-control" name="name" id="name">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="email">Email *</label>
+                                <input type="email" class="form-control" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="row m0">
+                            <label for="subject">subject *</label>
+                            <input type="text" class="form-control" name="subject" id="subject">
+                        </div>
+                        <div class="row m0">
+                            <label for="message">your message</label>
+                            <textarea name="message" id="message" class="form-control"></textarea>
+                        </div>
+                        <div class="row m0 captchaRow">
+                            <img src="images/captcha.png" alt=""><br>
+                            <label for="captcha">Enter the above text</label>
+                            <input type="text" class="form-control" name="captcha" id="captcha">
+                        </div>
+                        <button class="btn btn-primary btn-lg filled" type="submit">send message</button>                            
+                    </form>
+                    <div id="success">
+                            <span class="green textcenter">
+                                Your message was sent successfully! I will be in touch as soon as I can.
+                            </span>
+                    </div>
+                    <div id="error">
+                        <span>
+                            Something went wrong, try refreshing and submitting the form again.
+                        </span>
+                    </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="wwd2016">
-                   <h3>What we did in 2016</h3>
-                   <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure.</p>
-                   <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure.to help our lovely customers.</p>
-                   <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure.to help our lovely customers.</p>
+            </div>
+            <div class="col-sm-6">
+                <div class="row m0">
+                    <h4 class="contactHeading heading">contact info style</h4>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="wwd2015">
-                   <h3>What we did in 2015</h3>
-                   <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure.</p>
-                   <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure.to help our lovely customers.</p>
-                   <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure.to help our lovely customers.</p>
-                </div>
-             </div>
-          </div>
-       </div>
+                <div class="media contactInfo">
+                    <div class="media-left">
+                        <i class="fas fa-map-marker"></i>
+                    </div>
+                    <div class="media-body">
+                        <h5 class="heading">where to reach us</h5>
+                        <p>You can reach us at the following address:</p>
+                        <h5>404/2 Design Street, Australia</h5>
+                    </div> 
+                </div> <!--contactInfo-->
+                <div class="media contactInfo">
+                    <div class="media-left">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="media-body">
+                        <h5 class="heading">Email us @</h5>
+                        <p>Email your issues and suggestion for the following email addresses: </p>
+                        <h5>info@Defatch.com</h5>
+                    </div>
+                </div> <!--contactInfo-->
+                <div class="media contactInfo">
+                    <div class="media-left">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="media-body">
+                        <h5 class="heading">need to call us?</h5>
+                        <p>From Monday to Friday,10:00 AM - 8:00 PM, call us at:</p>
+                        <h5>1000-1234-5678</h5>
+                    </div>
+                </div> <!--contactInfo-->
+                <div class="media contactInfo">
+                    <div class="media-left">
+                        <i class="fas fa-question"></i>
+                    </div>
+                    <div class="media-body">
+                        <h5 class="heading">we have great support</h5>
+                        <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure. We provide the best Quality of products to you.</p>
+                    </div>
+                </div> <!--contactInfo-->
+            </div>
+        </div>
     </div>
- </section>
- <section id="hww" class="contentRowPad planing-sec">
-    <div class="container">
-      <div class="row">
-       <h3>how we work</h3>
-       <div class="col-md-4">
-          <h5><span>01.</span> Planning</h5>
-          <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure.</p>
-       </div>
-       <div class="col-md-4">
-          <h5><span>02.</span> Designing</h5>
-          <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure.</p>
-       </div>
-       <div class="col-md-4">
-          <h5><span>03.</span> Shipping</h5>
-          <p>We provide the best Quality of products to you.We are always here to help our lovely customers.We ship our products anywhere with more secure.</p>
-       </div>
-    </div>
-  </div>
- </section>
+</section>
+  <section id="googleMapRow" class="">
+    <div class="row m0" id="mapBox"></div>
+</section>
 
 
 
 
 
- <section class="footer-bg">
+<section class="footer-bg">
     <div class="container">
       <div class="row">
         <div class="col-md-4 about-footer">
@@ -302,49 +344,18 @@
   
 
 
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
     <script src="http://veepixel.com/tf/html/d-shine/vendors/owl.carousel/js/owl.carousel.min.js"></script>
     <script src="http://veepixel.com/tf/html/d-shine/js/d-shine.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="assets/js/google-map.js"></script>
+    <script src="http://veepixel.com/tf/html/d-shine/js/contact.js"></script>
     <script src="assets/js/header_plugins.js"></script>
     <script src="assets/js/header_main.js"></script>
-    <script>
-      // Hero slider JS
-      $('.hero-slider').owlCarousel({
-      animateOut: 'slideOutDown',
-      animateIn: 'heartBeat',
-      items:1,
-      loop:false,
- 
-      dots: true,
-      })
-      </script>
-      <script>
-        $(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-      </script>
   </body>
 </html>
