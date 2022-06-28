@@ -1,7 +1,27 @@
 (function ($) {
     "use strict";
 
-    new WOW().init();  
+    new WOW().init();
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+
+    /* <Password> */
+    $("#Password-toggle label.pass").on('click', function (event) {
+        event.stopPropagation();
+		event.preventDefault();
+		if ($('#Password-toggle input').attr("type") == "text") {
+			$('#Password-toggle input').attr('type', 'password');
+			$('#Password-toggle i').addClass("fa-eye-slash");
+			$('#Password-toggle i').removeClass("fa-eye");
+		} else if ($('#Password-toggle input').attr("type") == "password") {
+			$('#Password-toggle input').attr('type', 'text');
+			$('#Password-toggle i').removeClass("fa-eye-slash");
+			$('#Password-toggle i').addClass("fa-eye");
+		}
+	});
+    /* </Password> */
 
     /*---background image---*/
 	function dataBackgroundImage() {
@@ -79,10 +99,10 @@
     
     
     /*js ripples activation*/
-    $('.js-ripples').ripples({
+    /* $('.js-ripples').ripples({
 		resolution: 512,
 		dropRadius: 20,
 		perturbance: 0.04
-	});
+	}); */
     
 })(jQuery);	

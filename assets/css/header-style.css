@@ -996,6 +996,7 @@
   top: 0;
   transition: .5s;
   transform: translateX(100%);
+  box-shadow: -2px 0px 20px 0 #00000026;
 }
 .mini_cart.active {
   transform: translateX(0);
@@ -1011,7 +1012,7 @@
 
 .mini_cart_footer {
   padding: 20px 18px;
-  background: #242424;
+  /* background: #242424; */
 }
 
 .cart_img {

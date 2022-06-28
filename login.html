@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <link rel="stylesheet" href="assets/css/slider-offer.css">
+    <link rel="stylesheet" href="assets/css/header-plugins.css">
+    <link rel="stylesheet" href="assets/css/header-style.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .customlogin-imgcontent {
+            position: absolute;
+            top: 35%;
+            padding: 5rem;
+        }
+    </style>
+
+    <title>BAEMONT</title>
+  </head>
+  <body>
+    <div class="position-relative">
+        <div class="row g-0">
+            <div class="col-xl-6  d-xl-block d-none log-image1">
+                <div class="cover-image min-vh-100 d-flex align-items-center justify-content-center h-100" data-bs-image-src="assets/img/login-bg.jpg" style="background: url(&quot;assets/img/login-bg.jpg&quot;) center center;">
+                    <div class="w-100 position-relative">
+                        <div class="customlogin-imgcontent">
+                            <h2 class="mb-3 fs-35 text-white">Welcome To Baemont</h2>
+                            <p class="text-white-50">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 bg-white log-image1">
+                <div class="w-75 m-auto">
+                    <div class="customlogin-content pt-5 pt-xl-9">
+                        <div class="pt-4 card-body">
+                            <a class="header-brand" href="index.html">
+                                <img src="assets/img/logo.png" class="header-brand-img custom-logo"
+                                    alt="Beamontlogo">
+                                <!-- <img src="assets/img/logo.png" class="header-brand-img custom-logo-dark"
+                                    alt="Beamontlogo"> -->
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="mb-2">Login</h2>
+                            <p class="text-muted">Sign In to your account</p>
+                        </div>
+                        <form class="card-body pt-3" id="login" name="login">
+                            <div class="form-group">
+                                <label class="form-label">Mail or Username</label>
+                                <div class="input-group mb-4">
+                                    <div class="input-group">
+                                        <a class="input-group-text">
+                                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                                        </a>
+                                        <input class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Password</label>
+                                <div class="input-group mb-4">
+                                    <div class="input-group" id="Password-toggle">
+                                        <a href="#" class="pass input-group-text">
+                                            <i class="fas fa-eye" aria-hidden="true"></i>
+                                        </a>
+                                        <input class="form-control" value="Pass@2580" type="password" placeholder="Password">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="example-checkbox1"
+                                        value="option1">
+                                    <span class="custom-control-label">Remeber me</span>
+                                </label>
+                            </div>
+                            <div class="submit">
+                                <a class="btn btn-default mt-3 btn-block" href="index.html">Login</a>
+                            </div>
+                            <div class="text-center mt-3">
+                                <p class="mb-2"><a href="javascript:void(0);">Forgot Password</a></p>
+                                <p class="text-dark mb-0">Don't have account?<a class="text-primary ms-1" href="registeation.html">Register</a></p>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/js/header_main.js"></script> -->
+    <script>
+        
+    /* <Password> */
+    $("#Password-toggle a").on('click', function (event) {
+        event.stopPropagation();
+		event.preventDefault();
+		if ($('#Password-toggle input').attr("type") == "text") {
+			$('#Password-toggle input').attr('type', 'password');
+			$('#Password-toggle i').addClass("fa-eye-slash");
+			$('#Password-toggle i').removeClass("fa-eye");
+		} else if ($('#Password-toggle input').attr("type") == "password") {
+			$('#Password-toggle input').attr('type', 'text');
+			$('#Password-toggle i').removeClass("fa-eye-slash");
+			$('#Password-toggle i').addClass("fa-eye");
+		}
+	});
+    /* </Password> */
+
+    </script>
+</body>
+</html>

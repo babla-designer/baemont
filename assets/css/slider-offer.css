@@ -1,21 +1,21 @@
 
 
-.fleft {
+/* .fleft {
     float: left
 }
 
 .fright {
     float: right
 }
-
+ */
 ::selection {
     color: #fff;
-    background-color: #fd405e
+    background-color: #8b2845
 }
 
 ::-moz-selection {
     color: #fff;
-    background-color: #fd405e
+    background-color: #8b2845
 }
 
 section.row,
@@ -37,8 +37,6 @@ a,
 button {
     outline: none;
     transition: all 300ms ease-in-out 0s;
-    text-decoration: none;
-    color: #000;
 }
 
 a:focus,
@@ -51,7 +49,7 @@ button:hover {
     text-decoration: none;
     transition: all 300ms ease-in-out 0s;
     text-decoration: none;
-    color: #000;
+    /* color: #000; */
 }
 /*--------------------------------------------------*/
 					/*End Ancore*/
@@ -3642,7 +3640,7 @@ h6.heading {
     text-transform: uppercase;
     text-shadow: none;
     box-shadow: none
-} */
+}
 
 .btn.btn-sm {
     font-size: 14px;
@@ -3729,12 +3727,15 @@ span[data-toggle="tooltip"] {
     cursor: pointer
 }
 
+.tooltip .tooltip-arrow:before{
+    border-top-color: #8b2845;
+}
 .tooltip .tooltip-arrow {
-    width: 15px;
+    /* width: 15px;
     height: 15px;
     border: none;
     background: #8b2845;
-    transform: rotate(45deg)
+    transform: rotate(45deg) */
 }
 
 .tooltip.in {
@@ -3742,13 +3743,13 @@ span[data-toggle="tooltip"] {
 }
 
 .tooltip .tooltip-inner {
-    border-radius: 0;
     background: #8b2845;
     font-family: 'PT Sans', sans-serif;;
     color: #FFF;
     padding: 5px 35px;
     line-height: 20px;
-    text-transform: capitalize
+    /* border-radius: 0;
+    text-transform: capitalize; */
 }
 
 abbr[title] {

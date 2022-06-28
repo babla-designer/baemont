@@ -49,8 +49,18 @@
                   </div>
                   <div class="col-lg-4 col-md-7 col-6">
                       <div class="middel_right">
-                        <button><a href=""><i class="fa-regular fa-user"></i></a></button>
-                        <button><a href=""><i class="fa-regular fa-heart"></i></a></button>
+                        <div class="dropdown">
+                          <a class="btn" href="#" role="button" id="userPan" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-regular fa-user"></i></a>
+                          <ul class="dropdown-menu mt-4" aria-labelledby="userPan">
+                            <li><h6 class="dropdown-header">User Name</h6></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="login.html">My Account</a></li>
+                            <li><a class="dropdown-item" href="#">My Order</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                          </ul>
+                        </div>
+                        <a class="btn" href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
                           <div class="cart_link">
                               <a href="#"><i class="fa-solid fa-cart-arrow-down"></i></i><span class="cart_text_quantity"> $138.00</span></a>
                               <span class="cart_quantity">2</span>
@@ -61,7 +71,7 @@
                                           <h3>cart</h3>
                                       </div>
                                       <div class="mini_cart_close">
-                                          <a href="javascript:void(0)"><i class="ion-android-close"></i></a>
+                                          <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
                                       </div>
                                   </div>
                                   <div class="cart_item">
@@ -302,7 +312,7 @@
         <div class="col-md-4 customer-service">
           <h4>THE BAEMONT GUARANTEE</h4>
           <ul>
-            <li>20/7 Customer Service</li>
+          <li><a href="customer-service.html">20/7 Customer Service</a></li>
             <li>Product Lifetime Warranty</li>
             <li>Lifetime Upgrade</li>
             <li>Free Shipping</li>
