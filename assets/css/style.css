@@ -793,3 +793,41 @@ html,body{
     margin-top: 5em;
 }
 /* ==========Customize========= */
+
+/* ==========FAQ========= */
+.faq-btn {
+    background-color: #8b2845;
+    padding: 0.5em 1.1em;
+    color: #fff;
+}
+.faq-btn:hover {
+    border: 1px solid #8b2845;
+    padding: 0.5em 1.1em;
+    color: #8b2845;
+    background: transparent;
+}
+
+.right-faq-sec .faq-btn {
+    margin-bottom: 1em;
+}
+
+.right-faq-sec {
+    padding: 1em;
+}
+.title-faq {font-weight: 700;}
+.title-faq {font-weight: 700;}
+
+.faq-text {
+    padding: 2em 0;
+}
+
+.faq-text h3 {
+    margin-bottom: 1em;
+    color: #8b2845;
+    font-weight: 700;
+}
+.faq-item {
+    border: 0;
+    border-bottom: 1px solid #ddd;
+}
+/* ==========FAQ========= */
